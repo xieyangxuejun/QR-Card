@@ -3,9 +3,7 @@
 
 # Usage
 
-```
 [![](https://jitpack.io/v/xieyangxuejun/QR-Card.svg)](https://jitpack.io/#xieyangxuejun/QR-Card)
-```
 
 # 动态生成二维码分享页
 ```
