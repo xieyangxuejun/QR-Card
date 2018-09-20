@@ -5,6 +5,20 @@
 
 [![](https://jitpack.io/v/xieyangxuejun/QR-Card.svg)](https://jitpack.io/#xieyangxuejun/QR-Card)
 
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+}
+dependencies {
+	    implementation 'com.github.xieyangxuejun:QR-Card:1.0.0-beta01'
+}
+```
+
+
+
 # 动态生成二维码分享页
 ```
 class TestViewH(context: Context) : AbsBeView<String>(context, QrEntity("我是二维码", "https://google.com", "标题", "扫描二维码")) {
