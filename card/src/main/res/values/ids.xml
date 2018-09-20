@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iv_qr_image" type="id" />
+    <item name="iv_qr_msg" type="id" />
+    <item name="iv_qr_title" type="id" />
+</resources>

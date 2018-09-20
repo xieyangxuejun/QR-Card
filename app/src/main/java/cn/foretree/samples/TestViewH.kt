@@ -1,8 +1,22 @@
-# QR-Card
-动态生成二维码分享
+package cn.foretree.samples
 
-# 动态生成二维码分享页
-```
+import android.content.Context
+import android.graphics.Color
+import android.graphics.drawable.BitmapDrawable
+import android.util.TypedValue
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
+import androidx.appcompat.widget.LinearLayoutCompat
+import cn.foretree.view.card.AbsBeView
+import cn.foretree.view.card.QrEntity
+import kotlinx.android.synthetic.main.layout_test.view.*
+
+/**
+ * Created by silen on 20/09/2018
+ */
 class TestViewH(context: Context) : AbsBeView<String>(context, QrEntity("我是二维码", "https://google.com", "标题", "扫描二维码")) {
 
     override fun onBindBodyView(view: View, data: String) {
@@ -42,7 +56,3 @@ class TestViewH(context: Context) : AbsBeView<String>(context, QrEntity("我是�
         }
     }
 }
-```
-
-# Screen Shot
-![](screen-shot.jpg)
