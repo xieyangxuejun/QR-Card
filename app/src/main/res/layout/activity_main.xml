@@ -6,12 +6,64 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="带二维码的ViewGroup" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <cn.foretree.view.card.SimpleBeView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:qr_align="left|bottom"
+                app:qr_content="@string/app_name"
+                app:qr_height="40dp"
+                app:qr_width="40dp"/>
+            <cn.foretree.view.card.SimpleBeView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:qr_content="@string/app_name"
+                app:qr_height="40dp"
+                app:qr_orientation="CENTER_IN_PARENT"
+                app:qr_width="40dp" />
+
+            <cn.foretree.view.card.SimpleBeView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:qr_align="right|bottom"
+                app:qr_content="@string/app_name"
+                app:qr_height="40dp"
+                app:qr_orientation="CENTER_VERTICAL"
+                app:qr_width="40dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="带二维码的ImageView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <cn.foretree.view.card.QrImageView
+                app:qr_text="@string/app_name"
+                app:qr_logo="@mipmap/ic_launcher"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+        </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
@@ -20,10 +72,10 @@
 
         <ImageView
             android:id="@+id/iv_image"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
 
         <Button
             android:layout_width="wrap_content"
@@ -32,10 +84,10 @@
 
         <ImageView
             android:id="@+id/iv_image2"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
 
     </LinearLayout>
 </ScrollView>

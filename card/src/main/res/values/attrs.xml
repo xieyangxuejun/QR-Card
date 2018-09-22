@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SimpleBeView">
+        <attr name="qr_content" format="string"/>
+        <attr name="qr_align">
+            <flag name="left" value="1"/>
+            <flag name="right" value="2"/>
+            <flag name="top" value="4"/>
+            <flag name="bottom" value="8"/>
+        </attr>
+        <attr name="qr_orientation">
+            <enum name="CENTER_IN_PARENT" value="13"/>
+            <enum name="CENTER_HORIZONTAL" value="14"/>
+            <enum name="CENTER_VERTICAL" value="15"/>
+        </attr>
+        <attr name="qr_width" format="dimension"/>
+        <attr name="qr_height" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="QrImageView">
+        <attr name="qr_text" format="string"/>
+        <attr name="qr_color" format="color"/>
+        <attr name="qr_logo" format="reference"/>
+        <attr name="qr_background" format="reference"/>
+    </declare-styleable>
+</resources>

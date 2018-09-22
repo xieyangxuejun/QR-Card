@@ -130,11 +130,11 @@ class BarcodeEncoder {
     fun getEncodeHintTypeMap(margin: Int): Map<EncodeHintType, *> {
         val hst = mutableMapOf<EncodeHintType, Any>()
         // 设置字符编码
-        hst.put(EncodeHintType.CHARACTER_SET, "UTF-8")
+        hst[EncodeHintType.CHARACTER_SET] = "UTF-8"
         // 设置二维码容错率
-        hst.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H)
+        hst[EncodeHintType.ERROR_CORRECTION] = ErrorCorrectionLevel.H
         //设置白边
-        hst.put(EncodeHintType.MARGIN, margin)
+        hst[EncodeHintType.MARGIN] = margin
         return hst
     }
 
